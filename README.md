@@ -100,3 +100,6 @@ Sample Response:
     "message": "The data does NOT appear to follow Benford's Law at the 1.0% significance level. Warning: The number of data points is low (less than 50). Chi-square test results may not be reliable."
 }
 ```
+## Assumption
+One assumption was made with the way input string is processed, that the numbers would be delimited by either space, comma's, or new lines.
+https://github.com/z-raw/benford-analyzer/blob/3a593063cdeb2436f860ad136495249416dec647/src/main/kotlin/com/benfordanalyzer/services/DigitExtractor.kt#L21
